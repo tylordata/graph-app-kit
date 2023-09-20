@@ -18,8 +18,8 @@ export default ({
   if (filteredList.length === 0) {
     return null;
   }
-  const total = filteredList.reduce(
-    (acc, value) => (acc.value ? acc.value + value.value : acc + value.value)
+  const total = filteredList.reduce((acc, value) =>
+    acc.value ? acc.value + value.value : acc + value.value
   );
   const colorScale = scaleOrdinal({ range: chartTheme.colors.categories });
   return (
