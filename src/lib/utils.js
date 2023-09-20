@@ -45,7 +45,9 @@ export const stringifyMod = (
 ) => {
   prettyLevel = !prettyLevel
     ? false
-    : prettyLevel === true ? 1 : parseInt(prettyLevel, 10);
+    : prettyLevel === true
+    ? 1
+    : parseInt(prettyLevel, 10);
   const nextPrettyLevel = prettyLevel ? prettyLevel + 1 : false;
   const newLine = prettyLevel ? "\n" : "";
   const indentation =
